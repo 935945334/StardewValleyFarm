@@ -1573,6 +1573,9 @@ function floor() {//校准地板状态
 		}else{
 			floor_Season = "notwinter";
 		}
+		if (name == 17){
+			FarmNumB[floorArr[i]].firstChild.src = "imges/other/" + floor_Season + "/17/" + Math.ceil(Math.random()*16) + ".png";//添加随机地板贴图
+		}
 		if (name != 17) {
 
 			if (up != name && down != name && left != name && right != name) {
